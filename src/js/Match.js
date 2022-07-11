@@ -25,7 +25,6 @@ export default class Match extends Character {
     if (x < 5) {
       if (this.stonedOn) {
         this.understatedAttack = Math.floor((this.attack - Math.log2(x) * 5) * (11 - x) / 10)
-        console.log(this.understatedAttack);
       } else {
         this.understatedAttack = Math.floor(this.attack * (11 - x) / 10)
       }
