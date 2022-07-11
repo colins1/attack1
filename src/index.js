@@ -1,1 +1,1 @@
-import "./js/data";
+import "./js/Character";
