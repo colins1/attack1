@@ -2,9 +2,9 @@ import Daemon from '../js/Daemon';
 
 test('should return the created Daemon', () => {
   const damage = new Daemon('John')
-  damage.stoned = 'true'
-  console.log(damage.stoned);
-  expect(damage.stoned).toThrow('баг наложения дурмана');
+  expect(() => {
+    damage.stoned = 'true'
+  }).toThrow('баг наложения дурмана');
 });
 
 test('should return the created Daemon', () => {
